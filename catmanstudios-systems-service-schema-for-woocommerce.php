@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Plugin Name:     Service Schema For WooCommerce
- * Plugin URI:      https://bryanheadrick.com
+ * Plugin Name:     CatmanStudios Systems Service Schema For WooCommerce
  * Description:     Adds a "Service" option to WooCommerce products and outputs schema.org Service structured data instead of Product for those items.
  * Author:          bryanheadrick
  * Author URI:      https://bryanheadrick.com
- * Text Domain:     service-schema-for-woocommerce
+ * Text Domain:     catmanstudios-systems-service-schema-for-woocommerce
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.4.0
+ * Requires PHP:    7.4
  *
- * @package         Service_Schema_For_WooCommerce
+ * @package         CatmanStudios_Systems_Service_Schema_For_WooCommerce
  *
  * Requires Plugins: woocommerce
  * License:          GPL v2 or later
@@ -33,33 +33,33 @@ if (! defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
-define('SSW_PLUGIN_FILE', __FILE__);
-define('SSW_PLUGIN_DIR', plugin_dir_path(__FILE__));
+define('CMSS_PLUGIN_FILE', __FILE__);
+define('CMSS_PLUGIN_DIR', plugin_dir_path(__FILE__));
 
 /**
  * Boots the plugin once all plugins have loaded, guarding on WooCommerce being active.
  */
-function ssw_init()
+function cmss_init()
 {
 	if (! class_exists('WooCommerce')) {
-		add_action('admin_notices', 'ssw_missing_woocommerce_notice');
+		add_action('admin_notices', 'cmss_missing_woocommerce_notice');
 		return;
 	}
 
-	require_once SSW_PLUGIN_DIR . 'includes/class-ssw-product-fields.php';
-	require_once SSW_PLUGIN_DIR . 'includes/class-ssw-admin-settings.php';
-	require_once SSW_PLUGIN_DIR . 'includes/class-ssw-structured-data.php';
+	require_once CMSS_PLUGIN_DIR . 'includes/class-cmss-product-fields.php';
+	require_once CMSS_PLUGIN_DIR . 'includes/class-cmss-admin-settings.php';
+	require_once CMSS_PLUGIN_DIR . 'includes/class-cmss-structured-data.php';
 
-	new SSW_Product_Fields();
-	new SSW_Admin_Settings();
-	new SSW_Structured_Data();
+	new CMSS_Product_Fields();
+	new CMSS_Admin_Settings();
+	new CMSS_Structured_Data();
 }
-add_action('plugins_loaded', 'ssw_init');
+add_action('plugins_loaded', 'cmss_init');
 
 /**
  * Prints a contextual, non-persistent notice when WooCommerce is not active.
  */
-function ssw_missing_woocommerce_notice()
+function cmss_missing_woocommerce_notice()
 {
 	$screen = get_current_screen();
 
@@ -69,6 +69,6 @@ function ssw_missing_woocommerce_notice()
 
 	printf(
 		'<div class="notice notice-error"><p>%s</p></div>',
-		esc_html__('Service Schema for WooCommerce requires WooCommerce to be installed and active.', 'service-schema-for-woocommerce')
+		esc_html__('CatmanStudios Systems Service Schema For WooCommerce requires WooCommerce to be installed and active.', 'catmanstudios-systems-service-schema-for-woocommerce')
 	);
 }
