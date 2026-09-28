@@ -17,6 +17,7 @@ behat.yml
 bitbucket-pipelines.yml
 bin
 build
+svn
 .circleci
 .claude
 .superpowers
