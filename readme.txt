@@ -1,4 +1,4 @@
-=== CatManStudios Systems Service Schema For WooCommerce ===
+=== CatmanStudios Systems Service Schema For WooCommerce ===
 Contributors: bryanheadrick
 Tags: woocommerce, schema, structured-data, seo, service
 Requires at least: 6.0
@@ -14,7 +14,7 @@ Mark WooCommerce products as services and output schema.org Service structured d
 
 == Description ==
 
-CatManStudios Systems Service Schema For WooCommerce adds a "This is a service" option to Simple and Variable products. When enabled, the plugin changes the product's JSON-LD structured data `@type` from `Product` to `Service` (https://schema.org/Service), and lets you specify a provider, service type, and area served — either per product or as site-wide defaults under WooCommerce > Settings > Products.
+CatmanStudios Systems Service Schema For WooCommerce adds a "This is a service" option to Simple and Variable products. When enabled, the plugin changes the product's JSON-LD structured data `@type` from `Product` to `Service` (https://schema.org/Service), and lets you specify a provider, service type, and area served — either per product or as site-wide defaults under WooCommerce > Settings > Products.
 
 This plugin makes no external network requests and collects no data.
 
@@ -39,7 +39,7 @@ No, only Simple and Variable products support the Service flag.
 == Changelog ==
 
 = 1.4.0 =
-* Rebranded from Aplomb Labs to CatManStudios Systems; the plugin slug, text domain, and all functions, classes, constants, stored options, and product meta keys now use the `cmss_` prefix. Author remains bryanheadrick.
+* Rebranded from Aplomb Labs to CatmanStudios Systems; the plugin slug, text domain, and all functions, classes, constants, stored options, and product meta keys now use the `cmss_` prefix. Author remains bryanheadrick.
 
 = 1.3.0 =
 * Rebranded from Plumbline Labs to Aplomb Labs; the plugin slug, text domain, and all functions, classes, constants, stored options, and product meta keys used the `aplb_` prefix.

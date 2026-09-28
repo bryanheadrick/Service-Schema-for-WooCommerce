@@ -2,7 +2,7 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: CatManStudios Systems Service Schema For WooCommerce 1.4.0\n"
+"Project-Id-Version: CatmanStudios Systems Service Schema For WooCommerce 1.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/catmanstudios-systems-service-schema-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: catmanstudios-systems-service-schema-for-woocommerce.php
-msgid "CatManStudios Systems Service Schema For WooCommerce"
+msgid "CatmanStudios Systems Service Schema For WooCommerce"
 msgstr ""
 
 #. Description of the plugin
@@ -35,7 +35,7 @@ msgid "https://bryanheadrick.com"
 msgstr ""
 
 #: catmanstudios-systems-service-schema-for-woocommerce.php:72
-msgid "CatManStudios Systems Service Schema For WooCommerce requires WooCommerce to be installed and active."
+msgid "CatmanStudios Systems Service Schema For WooCommerce requires WooCommerce to be installed and active."
 msgstr ""
 
 #: includes/class-cmss-admin-settings.php:43

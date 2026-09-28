@@ -3,7 +3,7 @@
 /**
  * Class CMSS_ProductFieldsTest
  *
- * @package CatManStudios_Systems_Service_Schema_For_WooCommerce
+ * @package CatmanStudios_Systems_Service_Schema_For_WooCommerce
  */
 
 /**

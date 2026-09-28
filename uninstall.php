@@ -3,7 +3,7 @@
 /**
  * Fired when the plugin is uninstalled.
  *
- * @package CatManStudios_Systems_Service_Schema_For_WooCommerce
+ * @package CatmanStudios_Systems_Service_Schema_For_WooCommerce
  */
 
 if (! defined('WP_UNINSTALL_PLUGIN')) {

@@ -3,7 +3,7 @@
 /**
  * Registers the Service Schema settings section.
  *
- * @package CatManStudios_Systems_Service_Schema_For_WooCommerce
+ * @package CatmanStudios_Systems_Service_Schema_For_WooCommerce
  */
 
 if (! defined('ABSPATH')) {

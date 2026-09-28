@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name:     CatManStudios Systems Service Schema For WooCommerce
+ * Plugin Name:     CatmanStudios Systems Service Schema For WooCommerce
  * Description:     Adds a "Service" option to WooCommerce products and outputs schema.org Service structured data instead of Product for those items.
  * Author:          bryanheadrick
  * Author URI:      https://bryanheadrick.com
@@ -10,7 +10,7 @@
  * Version:         1.4.0
  * Requires PHP:    7.4
  *
- * @package         CatManStudios_Systems_Service_Schema_For_WooCommerce
+ * @package         CatmanStudios_Systems_Service_Schema_For_WooCommerce
  *
  * Requires Plugins: woocommerce
  * License:          GPL v2 or later
@@ -69,6 +69,6 @@ function cmss_missing_woocommerce_notice()
 
 	printf(
 		'<div class="notice notice-error"><p>%s</p></div>',
-		esc_html__('CatManStudios Systems Service Schema For WooCommerce requires WooCommerce to be installed and active.', 'catmanstudios-systems-service-schema-for-woocommerce')
+		esc_html__('CatmanStudios Systems Service Schema For WooCommerce requires WooCommerce to be installed and active.', 'catmanstudios-systems-service-schema-for-woocommerce')
 	);
 }
